@@ -64,7 +64,7 @@ class _OnboardingScreen extends StatelessWidget {
                         width: checkVerySmallDeviceSize(context)
                             ? size.width
                             : Dimens.smallDeviceBreakPoint,
-                        fit: BoxFit.fitWidth,
+                        // fit: BoxFit.fitWidth,
                       ),
                     ),
                   ),
@@ -72,6 +72,9 @@ class _OnboardingScreen extends StatelessWidget {
                     height: Dimens.extraLargePadding,
                   ),
                   const TitleAndDescriptionWidget(),
+                  const SizedBox(
+                    height: 80.0,
+                  ),
                 ],
               ),
             );

@@ -23,8 +23,13 @@ class MyApp extends StatelessWidget {
         ),
         fontFamily: FontFamily.poppinsRegular,
         useMaterial3: true,
+        scaffoldBackgroundColor: AppColors.backgroundColor,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: AppColors.backgroundColor,
+        ),
         bottomSheetTheme: const BottomSheetThemeData(
-          backgroundColor: Colors.transparent,
+          backgroundColor: AppColors.backgroundColor,
+          elevation: 0,
         ),
       ),
       home: const OnboardingScreen(),
