@@ -37,6 +37,8 @@ flutter:
   assets:
     - assets/fonts/
     - assets/images/onboarding/
+    - assets/images/
+    - assets/icons/
 
   fonts:
     - family: PoppinsBold

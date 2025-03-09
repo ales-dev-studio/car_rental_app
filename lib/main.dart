@@ -1,6 +1,6 @@
 import 'package:car_rental_app/core/gen/fonts.gen.dart';
 import 'package:car_rental_app/core/theme/colors.dart';
-import 'package:car_rental_app/features/onboarding_feature/presentation/screen/onboarding_screen.dart';
+import 'package:car_rental_app/features/authentication_feature/presentation/screens/authentication_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
           elevation: 0,
         ),
       ),
-      home: const OnboardingScreen(),
+      home: const AuthenticationScreen(),
     );
   }
 }
