@@ -1,6 +1,7 @@
 import 'package:car_rental_app/core/gen/assets.gen.dart';
 import 'package:car_rental_app/core/theme/colors.dart';
 import 'package:car_rental_app/core/theme/dimens.dart';
+import 'package:car_rental_app/core/utils/app_navigator.dart';
 import 'package:car_rental_app/core/utils/check_device_size.dart';
 import 'package:car_rental_app/core/widgets/app_button.dart';
 import 'package:car_rental_app/core/widgets/app_outlined_button.dart';
@@ -8,6 +9,7 @@ import 'package:car_rental_app/core/widgets/app_scaffold.dart';
 import 'package:car_rental_app/core/widgets/app_space.dart';
 import 'package:car_rental_app/core/widgets/app_subtitle_text.dart';
 import 'package:car_rental_app/core/widgets/app_title_text.dart';
+import 'package:car_rental_app/features/authentication_feature/presentation/screens/mobile_login_screen.dart';
 import 'package:flutter/material.dart';
 
 class AuthenticationScreen extends StatelessWidget {
@@ -74,7 +76,9 @@ class AuthenticationScreen extends StatelessWidget {
               ),
               AppButton(
                 title: 'Continue with Mobile number',
-                onPressed: () {},
+                onPressed: () {
+                  push(context, MobileLoginScreen());
+                },
                 iconPath: Assets.icons.call,
               ),
               const AppVSpace(),

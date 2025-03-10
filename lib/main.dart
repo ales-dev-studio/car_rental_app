@@ -26,6 +26,10 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: AppColors.backgroundColor,
         appBarTheme: const AppBarTheme(
           backgroundColor: AppColors.backgroundColor,
+          centerTitle: true,
+          titleTextStyle: TextStyle(
+            fontSize: 20.0,
+          ),
         ),
         bottomSheetTheme: const BottomSheetThemeData(
           backgroundColor: AppColors.backgroundColor,
