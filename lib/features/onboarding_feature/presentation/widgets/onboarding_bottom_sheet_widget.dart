@@ -1,5 +1,7 @@
 import 'package:car_rental_app/core/theme/colors.dart';
 import 'package:car_rental_app/core/theme/dimens.dart';
+import 'package:car_rental_app/core/utils/app_navigator.dart';
+import 'package:car_rental_app/features/authentication_feature/presentation/screens/authentication_screen.dart';
 import 'package:car_rental_app/features/onboarding_feature/presentation/bloc/onboarding_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -64,6 +66,10 @@ class OnboardingBottomSheetWidget extends StatelessWidget {
           ),
           TextButton(
             onPressed: () {
+              if (watch.state.position == 3) {
+                push(context, const AuthenticationScreen());
+                return;
+              }
               read.onNextPressed();
             },
             child: Text(

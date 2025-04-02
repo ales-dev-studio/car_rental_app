@@ -5,20 +5,18 @@ import 'package:flutter/material.dart';
 class AppTextButton extends StatelessWidget {
   const AppTextButton({
     super.key,
-    required this.title,
+    this.title,
+    this.child,
     required this.onPressed,
     this.textStyle,
-    this.startIconPath,
-    this.endIconPath,
     this.margin,
     this.color,
   });
 
   final String? title;
+  final Widget? child;
   final TextStyle? textStyle;
   final GestureTapCallback? onPressed;
-  final String? startIconPath;
-  final String? endIconPath;
   final EdgeInsets? margin;
   final Color? color;
 
@@ -32,13 +30,14 @@ class AppTextButton extends StatelessWidget {
           ),
       child: TextButton(
         onPressed: onPressed,
-        child: Text(
-          title ?? '',
-          style: textStyle ??
-              TextStyle(
-                color: color ?? AppColors.primaryColor,
-              ),
-        ),
+        child: child ??
+            Text(
+              title ?? '',
+              style: textStyle ??
+                  TextStyle(
+                    color: color ?? AppColors.primaryColor,
+                  ),
+            ),
       ),
     );
   }

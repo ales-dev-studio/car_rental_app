@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:app_bar_with_search_switch/app_bar_with_search_switch.dart';
 import 'package:car_rental_app/core/gen/assets.gen.dart';
 import 'package:car_rental_app/core/theme/colors.dart';
@@ -41,28 +42,30 @@ class CountrySelectionScreen extends StatelessWidget {
           );
         },
       ),
-      body: BlocBuilder<CountrySelectionCubit, CountrySelectionState>(
-        builder: (context, state) {
-          return ListView.builder(
-            itemCount: state.countries.length,
-            itemBuilder: (final context, final index) {
-              return AppListTile(
-                onTap: () {
-                  countrySelectionCubit.selectCountry(index);
-                  Navigator.of(context).pop();
-                },
-                leading: AppSvgViewer(
-                  state.countries[index]['flag'],
-                ),
-                title: state.countries[index]['name'],
-                trailingWidget: Text(
-                  state.countries[index]['code'],
-                  style: const TextStyle(color: AppColors.primaryColor),
-                ),
-              );
-            },
-          );
-        },
+      body: FadeInDown(
+        child: BlocBuilder<CountrySelectionCubit, CountrySelectionState>(
+          builder: (context, state) {
+            return ListView.builder(
+              itemCount: state.countries.length,
+              itemBuilder: (final context, final index) {
+                return AppListTile(
+                  onTap: () {
+                    countrySelectionCubit.selectCountry(index);
+                    Navigator.of(context).pop();
+                  },
+                  leading: AppSvgViewer(
+                    state.countries[index]['flag'],
+                  ),
+                  title: state.countries[index]['name'],
+                  trailingWidget: Text(
+                    state.countries[index]['code'],
+                    style: const TextStyle(color: AppColors.primaryColor),
+                  ),
+                );
+              },
+            );
+          },
+        ),
       ),
     );
   }

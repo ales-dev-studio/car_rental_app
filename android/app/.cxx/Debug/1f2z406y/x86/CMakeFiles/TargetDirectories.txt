@@ -1,0 +1,2 @@
+/home/ales/StudioProjects/car_rental_app/android/app/.cxx/Debug/1f2z406y/x86/CMakeFiles/edit_cache.dir
+/home/ales/StudioProjects/car_rental_app/android/app/.cxx/Debug/1f2z406y/x86/CMakeFiles/rebuild_cache.dir

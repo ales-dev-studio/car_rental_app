@@ -1,0 +1,1 @@
+/home/ales/StudioProjects/car_rental_app/build/app/intermediates/cxx/Debug/1f2z406y/obj/armeabi-v7a
