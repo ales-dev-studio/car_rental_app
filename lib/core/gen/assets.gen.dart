@@ -58,8 +58,14 @@ class $AssetsIconsGen {
   /// File path: assets/icons/gps.svg
   String get gps => 'assets/icons/gps.svg';
 
+  /// File path: assets/icons/history.svg
+  String get history => 'assets/icons/history.svg';
+
   /// File path: assets/icons/home-2.svg
   String get home2 => 'assets/icons/home-2.svg';
+
+  /// File path: assets/icons/home.svg
+  String get home => 'assets/icons/home.svg';
 
   /// File path: assets/icons/location.svg
   String get location => 'assets/icons/location.svg';
@@ -79,8 +85,14 @@ class $AssetsIconsGen {
   /// File path: assets/icons/search-normal.svg
   String get searchNormal => 'assets/icons/search-normal.svg';
 
+  /// File path: assets/icons/search.svg
+  String get search => 'assets/icons/search.svg';
+
   /// File path: assets/icons/star.svg
   String get star => 'assets/icons/star.svg';
+
+  /// File path: assets/icons/star_filled.svg
+  String get starFilled => 'assets/icons/star_filled.svg';
 
   /// File path: assets/icons/user.svg
   String get user => 'assets/icons/user.svg';
@@ -97,20 +109,48 @@ class $AssetsIconsGen {
     eyeSlash,
     eye,
     gps,
+    history,
     home2,
+    home,
     location,
     lock,
     mail,
     menu,
     minus,
     searchNormal,
+    search,
     star,
+    starFilled,
     user,
   ];
 }
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
+
+  /// File path: assets/images/BMW M3.png
+  AssetGenImage get bmwM3 => const AssetGenImage('assets/images/BMW M3.png');
+
+  /// File path: assets/images/Maserati Granturismo.png
+  AssetGenImage get maseratiGranturismo =>
+      const AssetGenImage('assets/images/Maserati Granturismo.png');
+
+  /// File path: assets/images/Porsche 911 GTS RS.png
+  AssetGenImage get porsche911GTSRS =>
+      const AssetGenImage('assets/images/Porsche 911 GTS RS.png');
+
+  /// File path: assets/images/Porsche Panamera.png
+  AssetGenImage get porschePanamera =>
+      const AssetGenImage('assets/images/Porsche Panamera.png');
+
+  /// File path: assets/images/banner1.png
+  AssetGenImage get banner1 => const AssetGenImage('assets/images/banner1.png');
+
+  /// File path: assets/images/banner2.png
+  AssetGenImage get banner2 => const AssetGenImage('assets/images/banner2.png');
+
+  /// File path: assets/images/banner3.png
+  AssetGenImage get banner3 => const AssetGenImage('assets/images/banner3.png');
 
   /// Directory path: assets/images/flags
   $AssetsImagesFlagsGen get flags => const $AssetsImagesFlagsGen();
@@ -130,14 +170,25 @@ class $AssetsImagesGen {
   /// File path: assets/images/otp-illustration.svg
   String get otpIllustration => 'assets/images/otp-illustration.svg';
 
+  /// File path: assets/images/profile.png
+  AssetGenImage get profile => const AssetGenImage('assets/images/profile.png');
+
   /// File path: assets/images/sample-logo.svg
   String get sampleLogo => 'assets/images/sample-logo.svg';
 
   /// List of all assets
   List<dynamic> get values => [
+    bmwM3,
+    maseratiGranturismo,
+    porsche911GTSRS,
+    porschePanamera,
+    banner1,
+    banner2,
+    banner3,
     ironGround,
     maserati,
     otpIllustration,
+    profile,
     sampleLogo,
   ];
 }
