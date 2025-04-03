@@ -3,10 +3,16 @@ import 'package:car_rental_app/core/theme/colors.dart';
 import 'package:flutter/material.dart';
 
 class AppTitleText extends StatelessWidget {
-  const AppTitleText(this.text, {super.key, this.color});
+  const AppTitleText(
+    this.text, {
+    super.key,
+    this.color,
+    this.fontSize,
+  });
 
   final String text;
   final Color? color;
+  final double? fontSize;
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +20,7 @@ class AppTitleText extends StatelessWidget {
       text,
       style: TextStyle(
         fontFamily: FontFamily.poppinsBold,
-        fontSize: 30.0,
+        fontSize: fontSize ?? 30.0,
         color: color ?? AppColors.whiteColor,
       ),
       textAlign: TextAlign.center,

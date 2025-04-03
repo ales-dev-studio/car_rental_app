@@ -14,6 +14,7 @@ class AppButton extends StatelessWidget {
     this.width,
     this.iconPath,
     this.margin,
+    this.borderRadius,
   });
 
   final String title;
@@ -22,6 +23,7 @@ class AppButton extends StatelessWidget {
   final double? width;
   final String? iconPath;
   final EdgeInsets? margin;
+  final double? borderRadius;
 
   @override
   Widget build(final BuildContext context) {
@@ -46,7 +48,9 @@ class AppButton extends StatelessWidget {
                 ),
           shape: WidgetStateProperty.all<RoundedRectangleBorder>(
             RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(Dimens.corners),
+              borderRadius: BorderRadius.circular(
+                borderRadius ?? Dimens.corners,
+              ),
             ),
           ),
         ),
