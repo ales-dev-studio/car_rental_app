@@ -1,16 +1,43 @@
-# car_rental_app
+## 🚗 Car Rental App – Flutter UI
 
-A new Flutter project.
+A sleek and modern Flutter UI for a Car Rental Application, designed with a clean user interface and smooth animations.
+This project showcases a responsive mobile app layout.
 
-## Getting Started
+## Installation
 
-This project is a starting point for a Flutter application.
+1. Clone the repository:
 
-A few resources to get you started if this is your first Flutter project:
+   ```bash
+   git clone https://github.com/ales-dev-studio/car_rental_app.git
+   ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. Change to the project directory:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   ```bash
+   cd car_rental_app
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   flutter pub get
+   ```
+
+4. Run the app:
+
+   ```bash
+   flutter run
+   ```
+
+## Structure
+
+The app follows the Clean Architecture principles, with the following structure:
+
+- `lib/`
+    - `core/`: Contains Core Utilities that used entire application
+    - `features/`:
+        - `{features_a}`:
+            - `data/`: Contains the data layer responsible for handling data fetching and caching.
+            - `domain/`: Defines the core business logic and entities of the app.
+            - `presentation/`: Contains the UI layer of the app, including BLOCs, views, and widgets.
+    - `main.dart`: Entry point of the application.
