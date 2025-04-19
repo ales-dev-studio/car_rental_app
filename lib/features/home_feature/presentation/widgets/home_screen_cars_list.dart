@@ -1,6 +1,7 @@
 import 'package:car_rental_app/core/gen/assets.gen.dart';
 import 'package:car_rental_app/core/theme/colors.dart';
 import 'package:car_rental_app/core/theme/dimens.dart';
+import 'package:car_rental_app/core/utils/app_navigator.dart';
 import 'package:car_rental_app/core/widgets/app_button.dart';
 import 'package:car_rental_app/core/widgets/app_outlined_button.dart';
 import 'package:car_rental_app/core/widgets/app_space.dart';
@@ -8,6 +9,7 @@ import 'package:car_rental_app/core/widgets/app_subtitle_text.dart';
 import 'package:car_rental_app/core/widgets/app_svg_viewer.dart';
 import 'package:car_rental_app/core/widgets/app_text_button.dart';
 import 'package:car_rental_app/core/widgets/app_title_text.dart';
+import 'package:car_rental_app/features/car_feature/presentation/screens/cars_list_screen.dart';
 import 'package:car_rental_app/features/home_feature/data/data_source/local/sample_data.dart';
 import 'package:flutter/material.dart';
 
@@ -53,7 +55,9 @@ class HomeScreenCarsList extends StatelessWidget {
                       ),
                     ],
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    push(context, const CarsListScreen());
+                  },
                 )
               ],
             ),
