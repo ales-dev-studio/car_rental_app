@@ -6,6 +6,7 @@ import 'package:car_rental_app/core/widgets/app_subtitle_text.dart';
 import 'package:car_rental_app/core/widgets/app_svg_viewer.dart';
 import 'package:car_rental_app/core/widgets/app_title_text.dart';
 import 'package:car_rental_app/features/car_feature/presentation/widgets/car_list_card_painter.dart';
+import 'package:car_rental_app/features/car_feature/presentation/widgets/cars_list_app_bar.dart';
 import 'package:car_rental_app/features/car_feature/presentation/widgets/price_widget.dart';
 import 'package:car_rental_app/features/car_feature/presentation/widgets/rate_widget.dart';
 import 'package:car_rental_app/features/home_feature/data/data_source/local/sample_data.dart';
@@ -17,7 +18,7 @@ class CarsListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppScaffold(
-      appBar: AppBar(),
+      appBar: const CarsListAppBar(),
       body: ListView.builder(
         itemCount: brandAndNameOfCars.length,
         itemBuilder: (final context, final index) {
