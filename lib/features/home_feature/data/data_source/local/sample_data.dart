@@ -82,3 +82,5 @@ List<String> imagesOfCars = [
   Assets.images.porschePanamera.path,
 ];
 
+String description = 'Experience the raw power and precision of the Porsche 911 GT3 RS, a high-performance masterpiece engineered for adrenaline seekers and driving purists. With its 4.0L naturally aspirated flat-six engine roaring at 525 HP, this track-focused beast delivers spine-tingling acceleration, razor-sharp handling, and an unforgettable symphony of exhaust notes.\nBook yours today and unleash the ultimate Porsche experience!';
+

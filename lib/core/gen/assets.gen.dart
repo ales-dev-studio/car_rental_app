@@ -9,6 +9,17 @@
 
 import 'package:flutter/widgets.dart';
 
+class $Assets3dModelsGen {
+  const $Assets3dModelsGen();
+
+  /// File path: assets/3d-models/porsche_911_carrera_gts.glb
+  String get porsche911CarreraGts =>
+      'assets/3d-models/porsche_911_carrera_gts.glb';
+
+  /// List of all assets
+  List<String> get values => [porsche911CarreraGts];
+}
+
 class $AssetsFontsGen {
   const $AssetsFontsGen();
 
@@ -27,6 +38,9 @@ class $AssetsFontsGen {
 
 class $AssetsIconsGen {
   const $AssetsIconsGen();
+
+  /// File path: assets/icons/360-degree-rotate-icon.svg
+  String get a360DegreeRotateIcon => 'assets/icons/360-degree-rotate-icon.svg';
 
   /// File path: assets/icons/add.svg
   String get add => 'assets/icons/add.svg';
@@ -99,6 +113,7 @@ class $AssetsIconsGen {
 
   /// List of all assets
   List<String> get values => [
+    a360DegreeRotateIcon,
     add,
     arrowLeft1,
     arrowLeft,
@@ -152,6 +167,14 @@ class $AssetsImagesGen {
   /// File path: assets/images/banner3.png
   AssetGenImage get banner3 => const AssetGenImage('assets/images/banner3.png');
 
+  /// File path: assets/images/chair-indicator.png
+  AssetGenImage get chairIndicator =>
+      const AssetGenImage('assets/images/chair-indicator.png');
+
+  /// File path: assets/images/engine-indicator.png
+  AssetGenImage get engineIndicator =>
+      const AssetGenImage('assets/images/engine-indicator.png');
+
   /// Directory path: assets/images/flags
   $AssetsImagesFlagsGen get flags => const $AssetsImagesFlagsGen();
 
@@ -176,6 +199,10 @@ class $AssetsImagesGen {
   /// File path: assets/images/sample-logo.svg
   String get sampleLogo => 'assets/images/sample-logo.svg';
 
+  /// File path: assets/images/speed-indicator.png
+  AssetGenImage get speedIndicator =>
+      const AssetGenImage('assets/images/speed-indicator.png');
+
   /// List of all assets
   List<dynamic> get values => [
     bmwM3,
@@ -185,11 +212,14 @@ class $AssetsImagesGen {
     banner1,
     banner2,
     banner3,
+    chairIndicator,
+    engineIndicator,
     ironGround,
     maserati,
     otpIllustration,
     profile,
     sampleLogo,
+    speedIndicator,
   ];
 }
 
@@ -1451,6 +1481,7 @@ class $AssetsImagesOnboardingGen {
 class Assets {
   const Assets._();
 
+  static const $Assets3dModelsGen a3dModels = $Assets3dModelsGen();
   static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();

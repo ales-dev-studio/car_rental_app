@@ -21,6 +21,7 @@ dependencies:
   pinput: ^5.0.1
   carousel_slider: ^5.0.0
   smooth_page_indicator: ^1.2.1
+  flutter_3d_controller: ^2.2.0
 
 dev_dependencies:
   flutter_test:
@@ -44,6 +45,7 @@ flutter:
     - assets/images/flags/
     - assets/images/
     - assets/icons/
+    - assets/3d-models/
 
   fonts:
     - family: PoppinsBold

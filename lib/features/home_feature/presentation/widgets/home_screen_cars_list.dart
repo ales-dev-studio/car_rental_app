@@ -9,6 +9,7 @@ import 'package:car_rental_app/core/widgets/app_subtitle_text.dart';
 import 'package:car_rental_app/core/widgets/app_svg_viewer.dart';
 import 'package:car_rental_app/core/widgets/app_text_button.dart';
 import 'package:car_rental_app/core/widgets/app_title_text.dart';
+import 'package:car_rental_app/features/car_feature/presentation/screens/car_details_screen.dart';
 import 'package:car_rental_app/features/car_feature/presentation/screens/cars_list_screen.dart';
 import 'package:car_rental_app/features/home_feature/data/data_source/local/sample_data.dart';
 import 'package:flutter/material.dart';
@@ -146,7 +147,9 @@ class HomeScreenCarsList extends StatelessWidget {
                                   margin: EdgeInsets.zero,
                                   borderRadius: Dimens.smallCorners,
                                   title: 'Details',
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    push(context, const CarDetailsScreen());
+                                  },
                                 ),
                               ),
                             ],
