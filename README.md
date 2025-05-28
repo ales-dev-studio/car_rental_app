@@ -1,5 +1,7 @@
 ## 🚗 Car Rental App – Flutter UI
 
+![Untitled](https://raw.githubusercontent.com/ales-dev-studio/car_rental_app/refs/heads/main/assets/images/Demo.jpg)
+
 A sleek and modern Flutter UI for a Car Rental Application, designed with a clean user interface and smooth animations.
 This project showcases a responsive mobile app layout.
 
